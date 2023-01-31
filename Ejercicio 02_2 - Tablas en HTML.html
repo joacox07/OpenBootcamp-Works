@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/Tarea%2002.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 02/2 - Tablas en HTML</title>
+</head>
+
+<body>
+    <table>
+        <tbody><tr>
+            <th>Titulo</th>
+            <th>Autor</th>
+            <th>Año de publiacación</th>
+            <th>Enlace a amazon</th>
+        </tr>
+        <tr>
+            <td>Harry Potter y la piedra filosofal</td>
+            <td>J.K.Rowling</td>
+            <td>26 de junio de 1997</td>
+            <td><a href="https://www.amazon.com/-/es/J-K-Rowling/dp/0545790352/ref=sxin_10_mbs_w_global_sims?content-id=amzn1.sym.f6adc278-60fd-4516-8b02-0dbae28f44f1%3Aamzn1.sym.f6adc278-60fd-4516-8b02-0dbae28f44f1&amp;cv_ct_cx=harry+potter+book+1&amp;keywords=harry+potter+book+1&amp;pd_rd_i=0545790352&amp;pd_rd_r=af73a126-a9e1-48af-b6dd-e8754486e8ff&amp;pd_rd_w=Mu6b8&amp;pd_rd_wg=8hWxE&amp;pf_rd_p=f6adc278-60fd-4516-8b02-0dbae28f44f1&amp;pf_rd_r=5GJSAJYJXE7VZDCV7F9J&amp;qid=1675178401&amp;sprefix=harry+potter+book+%2Caps%2C316&amp;sr=1-5-9e7645f9-2d19-4bff-863e-f6cdbe50f990">Compra
+                    aqui</a>
+            </td>
+        </tr>
+        <tr>
+            <th>El señor de los anillos: la comunidad del anillo</th>
+            <th>J.R.R. Tolkien</th>
+            <th>29 de julio de 1954</th>
+            <th><a href="https://www.amazon.com/-/es/J-R-R-Tolkien/dp/6070712722/ref=sr_1_4?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=1RL78D5IBJO11&amp;keywords=LA+COMUNIDAD+DEL+ANILLO&amp;qid=1675178623&amp;s=books&amp;sprefix=la+comunidad+del+anillo%2Cstripbooks-intl-ship%2C385&amp;sr=1-4">Compra
+                    aqui</a></th>
+        </tr>
+        <tr>
+            <th>Padre Rico, Padre Pobre</th>
+            <th>Robert Kiyosaki y Sharon Lechter</th>
+            <th>1997</th>
+            <th><a href="https://www.amazon.com/-/es/Robert-T-Kiyosaki/dp/987970245X/ref=sr_1_1?crid=2MO0X0ZZWROVD&amp;keywords=padre+rico+padre+pobre&amp;qid=1675178831&amp;s=books&amp;sprefix=padre+rico%2Cstripbooks-intl-ship%2C2938&amp;sr=1-1">Compra
+                    aqui</a></th>
+        </tr>
+    </tbody></table>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
